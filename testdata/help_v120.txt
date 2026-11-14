@@ -1,0 +1,17 @@
+Commands:
+  help - display help menu
+  info - display system info
+  channel - get/set current channel
+  settings - display or change settings
+  scanall - scan APs and Stations
+  scanap - scan for APs
+  scansta - scan for Stations
+  sniffbeacon - sniff beacon frames
+  sniffdeauth - sniff deauth frames
+  sniffpmkid - sniff PMKID handshakes
+  sniffraw - raw 802.11 sniffer to SD
+  sniffbt - sniff BLE devices
+  stopscan - stop any active scan or sniff
+  attack - execute authorized attack test
+  reboot - reboot the device
+  clearlist - clear discovered targets

@@ -1,0 +1,7 @@
+Starting scanall...
+AP: 0 | Lab_Secure_5G | 00:11:22:33:44:55 | -45 | 36 | WPA2
+AP: 1 | Test_Guest | aa:bb:cc:dd:ee:ff | -72 | 6 | OPEN
+AP: 2 | Lab_IoT_Network | 00:11:22:aa:bb:cc | -60 | 1 | WPA3
+STA: 0 | 12:34:56:78:9a:bc | -55 | 00:11:22:33:44:55
+STA: 1 | de:ad:be:ef:00:01 | -80 | Unknown
+Scanning... found 3 APs and 2 STAs

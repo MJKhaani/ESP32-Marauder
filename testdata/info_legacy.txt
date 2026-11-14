@@ -1,0 +1,4 @@
+ESP32 Marauder v0.13.4
+by justcallmekoko
+Hardware: Marauder v4
+SD: Not connected

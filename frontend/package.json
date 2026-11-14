@@ -1,0 +1,21 @@
+{
+  "name": "marauder-studio-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.0.2",
+    "autoprefixer": "^10.4.18",
+    "postcss": "^8.4.35",
+    "svelte": "^4.2.11",
+    "svelte-check": "^3.6.4",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.4"
+  }
+}

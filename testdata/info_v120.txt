@@ -1,0 +1,9 @@
+================================
+ESP32 Marauder
+Version: v1.20.0
+Author: justcallmekoko
+Hardware: Marauder v6
+SD Card: Connected
+GPS: Connected
+Battery: 4.12V (92%)
+================================

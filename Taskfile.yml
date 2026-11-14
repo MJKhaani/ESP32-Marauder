@@ -1,0 +1,36 @@
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - task: test
+      - task: build
+
+  fmt:
+    desc: Format Go source code
+    cmds:
+      - go fmt ./...
+
+  vet:
+    desc: Run Go static analysis
+    cmds:
+      - go vet ./...
+
+  test:
+    desc: Run unit and integration tests
+    cmds:
+      - go test -v ./...
+
+  frontend:
+    desc: Build frontend production assets
+    dir: frontend
+    cmds:
+      - npm install
+      - npm run build
+
+  build:
+    desc: Compile Marauder Studio binaries
+    deps: [frontend]
+    cmds:
+      - go build -o marauder-studio main.go
+      - go build -o marauder-cli ./cmd/marauder-studio/main.go
