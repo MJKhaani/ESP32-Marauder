@@ -6,7 +6,7 @@
 
 ### Next-Generation Desktop Control & Defensive Analysis Suite for ESP32 Marauder
 
-[![GitHub Release](https://img.shields.io/github/v/release/MJKhaani/ESP32-Marauder?style=for-the-badge&logo=github&color=0ea5e9&labelColor=0f172a)](https://github.com/MJKhaani/ESP32-Marauder/releases)
+[![Latest Release](https://img.shields.io/github/v/release/MJKhaani/ESP32-Marauder?label=Release&sort=semver&style=for-the-badge&logo=github&color=0ea5e9&labelColor=0f172a)](https://github.com/MJKhaani/ESP32-Marauder/releases/latest)
 [![CI Status](https://img.shields.io/github/actions/workflow/status/MJKhaani/ESP32-Marauder/ci.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&labelColor=0f172a)](https://github.com/MJKhaani/ESP32-Marauder/actions/workflows/ci.yml)
 [![Go Version](https://img.shields.io/badge/Go-1.22%2B-00ADD8?style=for-the-badge&logo=go&logoColor=white&labelColor=0f172a)](https://golang.org)
 [![Platform](https://img.shields.io/badge/Platforms-macOS%20%7C%20Windows%20%7C%20Linux-818cf8?style=for-the-badge&labelColor=0f172a)](#platform-downloads)
