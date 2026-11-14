@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="resources/icons/Marauder_Studio_1024.png" alt="Marauder Studio Icon" width="112" height="112" style="border-radius: 24px; box-shadow: 0 8px 32px rgba(14, 165, 233, 0.35); margin-bottom: 0.5rem;" />
+
 # ⚡ MARAUDER STUDIO
 
 ### Next-Generation Desktop Control & Defensive Analysis Suite for ESP32 Marauder
@@ -22,24 +24,9 @@
 
 ## 🖥️ User Interface Overview
 
-```text
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│ [M] Marauder Studio v1.0.0      Target: Marauder v6 [Connected]     [Quick Survey] [STOP ALL] │
-├──────────────┬─────────────────────────────────────────────────────────────────────────┤
-│  Overview    │  DISCOVERED ACCESS POINTS (38 Active)                   Filter: [ Lab_5G  ]     │
-│  Devices     ├─────────────────────────────────────────────────────────────────────────┤
-│ >Wi-Fi Survey│  BSSID              SSID              CH  BAND     RSSI     SECURITY VENDOR │
-│  Channels    │  00:11:22:33:44:55  Lab_Secure_5G     36  5 GHz    -45 dBm  WPA2     Cisco  │
-│  Captures    │  aa:bb:cc:dd:ee:ff  Guest_Open         6  2.4 GHz  -72 dBm  OPEN     Intel  │
-│  Bluetooth   │  00:11:22:aa:bb:cc  Lab_IoT_Sensors    1  2.4 GHz  -60 dBm  WPA3     Cisco  │
-│  GPS & Recon ├─────────────────────────────────────────────────────────────────────────┤
-│  Auth Lab ⚠️ │  DEFENSIVE ANOMALY MONITOR                                              │
-│  Firmware    │  [CRIT] 13:42:01 — Deauth Storm: >15 frames/sec from aa:bb:cc:xx:xx:xx  │
-│  Reports     │  [WARN] 13:41:12 — Evil Twin Alert: Duplicate SSID 'Guest_Open' on CH 1 │
-│  Console     ├─────────────────────────────────────────────────────────────────────────┤
-│  Settings    │  PACKET STREAM: [||||||||||||||||||||||||||||||||] 142 pkts/s (Bounded) │
-└──────────────┴─────────────────────────────────────────────────────────────────────────┘
-```
+<div align="center">
+  <img src="resources/Screenshot.png" alt="Marauder Studio Desktop Interface" width="100%" style="border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid #1e293b;" />
+</div>
 
 ---
 

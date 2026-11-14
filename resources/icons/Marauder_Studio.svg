@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>Marauder Studio — macOS App Icon</title>
+  <desc>Modern macOS icon with a midnight-blue rounded-square base, an ESP32 microchip, and an angular luminous marauder mask.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#273A72"/>
+      <stop offset="0.36" stop-color="#151F4B"/>
+      <stop offset="0.77" stop-color="#0C1434"/>
+      <stop offset="1" stop-color="#080F21"/>
+    </linearGradient>
+    <radialGradient id="skyGlow" cx="0.76" cy="0.14" r="0.76">
+      <stop offset="0" stop-color="#3E97DC" stop-opacity=".52"/>
+      <stop offset=".47" stop-color="#386ED7" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#143B82" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="warmGlow" cx="0.15" cy=".83" r="0.65">
+      <stop offset="0" stop-color="#7B5DD7" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#453B96" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2=".86" y2="1">
+      <stop offset="0" stop-color="#96B2FF" stop-opacity=".72"/>
+      <stop offset=".32" stop-color="#4C76CC" stop-opacity=".32"/>
+      <stop offset=".71" stop-color="#27436E" stop-opacity=".33"/>
+      <stop offset="1" stop-color="#ACDDF2" stop-opacity=".35"/>
+    </linearGradient>
+    <linearGradient id="chipMetal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9BC5E6"/>
+      <stop offset=".13" stop-color="#456F9F"/>
+      <stop offset=".4" stop-color="#283D63"/>
+      <stop offset=".73" stop-color="#0B1D3B"/>
+      <stop offset="1" stop-color="#6A91B6"/>
+    </linearGradient>
+    <linearGradient id="chipBody" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#234C75"/>
+      <stop offset=".36" stop-color="#142C52"/>
+      <stop offset="1" stop-color="#081324"/>
+    </linearGradient>
+    <linearGradient id="face" x1="0" y1="0" x2=".85" y2="1">
+      <stop offset="0" stop-color="#254C68"/>
+      <stop offset=".54" stop-color="#0F2749"/>
+      <stop offset="1" stop-color="#06172B"/>
+    </linearGradient>
+    <linearGradient id="pins" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3A708F"/>
+      <stop offset=".48" stop-color="#D5F0E6"/>
+      <stop offset="1" stop-color="#4C88AC"/>
+    </linearGradient>
+    <linearGradient id="mask" x1=".12" y1="0" x2=".9" y2="1">
+      <stop offset="0" stop-color="#E7FFF8"/>
+      <stop offset=".26" stop-color="#86F2DC"/>
+      <stop offset=".58" stop-color="#36C7BD"/>
+      <stop offset="1" stop-color="#188ACD"/>
+    </linearGradient>
+    <linearGradient id="eye" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0F3551"/>
+      <stop offset="1" stop-color="#061B31"/>
+    </linearGradient>
+    <linearGradient id="arc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#DFFCF4"/>
+      <stop offset=".55" stop-color="#4ADCE0"/>
+      <stop offset="1" stop-color="#4789FF"/>
+    </linearGradient>
+    <radialGradient id="beacon" cx=".28" cy=".24" r=".85">
+      <stop offset="0" stop-color="#FFF6C6"/>
+      <stop offset=".3" stop-color="#FFD37D"/>
+      <stop offset="1" stop-color="#F58B4F"/>
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="220%"><feGaussianBlur stdDeviation="22"/></filter>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="softGlow" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="15"/></filter>
+    <clipPath id="squircle"><rect x="48" y="48" width="928" height="928" rx="214" ry="214"/></clipPath>
+    <pattern id="microGrid" patternUnits="userSpaceOnUse" width="30" height="30">
+      <path d="M30 0 H0 V30" fill="none" stroke="#8ACFE5" stroke-opacity=".055" stroke-width="1.6"/>
+    </pattern>
+  </defs>
+  <!-- macOS-style rounded squircle and polished inset highlights -->
+  <g clip-path="url(#squircle)">
+    <rect x="48" y="48" width="928" height="928" fill="url(#bg)"/>
+    <rect x="48" y="48" width="928" height="928" fill="url(#skyGlow)"/>
+    <rect x="48" y="48" width="928" height="928" fill="url(#warmGlow)"/>
+    <ellipse cx="498" cy="74" rx="440" ry="170" fill="#C0DDFF" opacity=".08" filter="url(#shadow)"/>
+    <!-- subtle radar geometry: abstract studio precision, not clutter -->
+    <circle cx="512" cy="525" r="353" fill="none" stroke="#95D3FF" stroke-opacity=".065" stroke-width="3"/>
+    <circle cx="512" cy="525" r="302" fill="none" stroke="#95D3FF" stroke-opacity=".08" stroke-width="2"/>
+    <path d="M130 513 H225 M800 513 H897 M512 132 V227 M512 817 V920" stroke="#82D4F1" stroke-opacity=".105" stroke-width="3" stroke-linecap="round"/>
+    <path d="M91 666 C157 779 253 862 388 904" fill="none" stroke="#93A7FC" stroke-opacity=".12" stroke-width="24" filter="url(#shadow)"/>
+    <!-- little circuit traces peeking from beneath the component -->
+    <g fill="none" stroke="#69B3D6" stroke-width="5" stroke-opacity=".22" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M276 395 H215 L169 349 H137"/>
+      <path d="M268 638 H220 L183 675 H145"/>
+      <path d="M758 434 H808 L846 395 H886"/>
+      <path d="M747 661 H803 L840 698 H882"/>
+    </g>
+    <g fill="#7ED9DA" opacity=".48"><circle cx="137" cy="349" r="7"/><circle cx="145" cy="675" r="7"/><circle cx="886" cy="395" r="7"/><circle cx="882" cy="698" r="7"/></g>
+    <!-- radio-signal arcs at top, behind main chip -->
+    <g fill="none" stroke="url(#arc)" stroke-linecap="round">
+      <path d="M394 286 Q512 179 630 286" stroke-width="16" opacity=".28" filter="url(#glow)"/>
+      <path d="M394 286 Q512 179 630 286" stroke-width="11" opacity=".64"/>
+      <path d="M438 306 Q512 239 586 306" stroke-width="10" opacity=".78"/>
+      <path d="M481 326 Q512 297 543 326" stroke-width="9" opacity=".82"/>
+    </g>
+    <!-- chip contact pins: nickel/teal with specular stripe -->
+    <g fill="url(#pins)" stroke="#193F59" stroke-opacity=".65" stroke-width="2">
+      <rect x="352" y="286" width="27" height="79" rx="10"/>
+      <rect x="400" y="286" width="27" height="79" rx="10"/>
+      <rect x="448" y="286" width="27" height="79" rx="10"/>
+      <rect x="496" y="286" width="27" height="79" rx="10"/>
+      <rect x="544" y="286" width="27" height="79" rx="10"/>
+      <rect x="592" y="286" width="27" height="79" rx="10"/>
+      <rect x="640" y="286" width="27" height="79" rx="10"/>
+      <rect x="352" y="701" width="27" height="79" rx="10"/>
+      <rect x="400" y="701" width="27" height="79" rx="10"/>
+      <rect x="448" y="701" width="27" height="79" rx="10"/>
+      <rect x="496" y="701" width="27" height="79" rx="10"/>
+      <rect x="544" y="701" width="27" height="79" rx="10"/>
+      <rect x="592" y="701" width="27" height="79" rx="10"/>
+      <rect x="640" y="701" width="27" height="79" rx="10"/>
+      <rect x="265" y="373" width="81" height="27" rx="10"/>
+      <rect x="265" y="421" width="81" height="27" rx="10"/>
+      <rect x="265" y="469" width="81" height="27" rx="10"/>
+      <rect x="265" y="517" width="81" height="27" rx="10"/>
+      <rect x="265" y="565" width="81" height="27" rx="10"/>
+      <rect x="265" y="613" width="81" height="27" rx="10"/>
+      <rect x="265" y="661" width="81" height="27" rx="10"/>
+      <rect x="680" y="373" width="81" height="27" rx="10"/>
+      <rect x="680" y="421" width="81" height="27" rx="10"/>
+      <rect x="680" y="469" width="81" height="27" rx="10"/>
+      <rect x="680" y="517" width="81" height="27" rx="10"/>
+      <rect x="680" y="565" width="81" height="27" rx="10"/>
+      <rect x="680" y="613" width="81" height="27" rx="10"/>
+      <rect x="680" y="661" width="81" height="27" rx="10"/>
+    </g>
+    <!-- floating microcontroller shadow + silver bevel -->
+    <rect x="310" y="355" width="418" height="418" rx="70" fill="#020917" opacity=".65" filter="url(#shadow)"/>
+    <rect x="300" y="319" width="424" height="424" rx="70" fill="url(#chipMetal)" stroke="#9DC8E1" stroke-opacity=".58" stroke-width="4"/>
+    <rect x="309" y="328" width="406" height="406" rx="62" fill="url(#chipBody)" stroke="#041326" stroke-opacity=".9" stroke-width="6"/>
+    <rect x="334" y="352" width="356" height="356" rx="46" fill="url(#face)" stroke="#A1DDE8" stroke-opacity=".3" stroke-width="3"/>
+    <rect x="334" y="352" width="356" height="356" rx="46" fill="url(#microGrid)"/>
+    <!-- technical tick marks, delicate and symmetrical -->
+    <g stroke="#76D7DE" stroke-opacity=".26" stroke-width="4" stroke-linecap="round">
+      <path d="M364 404 V420 M387 380 H402 M636 380 H621 M660 404 V420 M364 660 V645 M387 678 H402 M660 660 V645 M636 678 H621"/>
+    </g>
+    <!-- soft neon aura beneath marauder emblem -->
+    <ellipse cx="512" cy="531" rx="147" ry="139" fill="#34D3D0" opacity=".19" filter="url(#softGlow)"/>
+    <!-- crest top surface: minimalist angular marauder mask -->
+    <path d="M382 467 Q440 428 512 465 Q584 428 642 467 L619 578 Q598 638 512 657 Q426 638 405 578 Z"
+          fill="#1A91B8" opacity=".42" filter="url(#glow)"/>
+    <path d="M377 462 Q428 432 476 447 L512 463 L548 447 Q596 432 647 462
+             L624 574 Q606 629 512 653 Q418 629 400 574 Z"
+          fill="url(#mask)" stroke="#BAFFF6" stroke-opacity=".75" stroke-width="4" stroke-linejoin="round"/>
+    <!-- forehead sculpted M-like crest -->
+    <path d="M420 466 L466 477 L512 516 L558 477 L604 466" fill="none" stroke="#0B607C" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" opacity=".36"/>
+    <path d="M435 458 L471 470 L512 502 L553 470 L589 458" fill="none" stroke="#E8FFF7" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
+    <!-- eyes: negative space for recognizable bandit silhouette -->
+    <path d="M408 512 Q443 498 487 520 L473 553 Q435 549 414 529 Z" fill="url(#eye)"/>
+    <path d="M616 512 Q581 498 537 520 L551 553 Q589 549 610 529 Z" fill="url(#eye)"/>
+    <!-- crystalline brows, white eye sparkle at native full res -->
+    <path d="M419 512 Q450 505 476 519" fill="none" stroke="#F7FFFA" stroke-opacity=".48" stroke-width="5" stroke-linecap="round"/>
+    <path d="M605 512 Q574 505 548 519" fill="none" stroke="#F7FFFA" stroke-opacity=".48" stroke-width="5" stroke-linecap="round"/>
+    <!-- sharp center nose & jaw creates stylized M illusion -->
+    <path d="M512 525 L493 579 L512 594 L531 579 Z" fill="#0E5C79" opacity=".82"/>
+    <path d="M466 609 Q512 624 558 609" fill="none" stroke="#056986" stroke-opacity=".57" stroke-width="9" stroke-linecap="round"/>
+    <path d="M422 563 Q427 606 461 624 M602 563 Q597 606 563 624" fill="none" stroke="#EDFFF7" stroke-opacity=".26" stroke-width="7" stroke-linecap="round"/>
+    <!-- warm indicator light in chip's bottom-right corner -->
+    <circle cx="650" cy="678" r="25" fill="#FFB55A" opacity=".18" filter="url(#softGlow)"/>
+    <circle cx="650" cy="678" r="11" fill="url(#beacon)"/>
+    <circle cx="646" cy="675" r="3.5" fill="#FFFBE5"/>
+    <!-- bottom-left discreet hardware marker -->
+    <circle cx="373" cy="678" r="5" fill="#74DED5" opacity=".7"/>
+    <!-- sheen on chip's upper edge -->
+    <path d="M373 340 H646" stroke="#E1FFFF" stroke-opacity=".3" stroke-width="5" stroke-linecap="round"/>
+    <path d="M309 386 V666" stroke="#D1E9FF" stroke-opacity=".13" stroke-width="6" stroke-linecap="round"/>
+    <!-- app icon's faint bottom reflected light -->
+    <path d="M237 927 Q512 977 787 927" fill="none" stroke="#7BB4F0" stroke-opacity=".13" stroke-width="22" filter="url(#glow)"/>
+  </g>
+  <rect x="50" y="50" width="924" height="924" rx="212" fill="none" stroke="url(#rim)" stroke-width="5"/>
+  <path d="M253 87 Q512 25 771 87" fill="none" stroke="#D8E9FF" stroke-opacity=".18" stroke-width="7" stroke-linecap="round"/>
+</svg>

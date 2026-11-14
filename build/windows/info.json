@@ -1,0 +1,15 @@
+{
+	"fixed": {
+		"file_version": "1.0.0.0"
+	},
+	"info": {
+		"0000": {
+			"ProductVersion": "1.0.0",
+			"CompanyName": "Marauder Studio",
+			"FileDescription": "Marauder Studio Desktop Control Suite",
+			"LegalCopyright": "Copyright (c) 2026",
+			"ProductName": "Marauder Studio",
+			"Comments": "ESP32 Marauder Desktop Suite"
+		}
+	}
+}
