@@ -3,6 +3,7 @@ name: Release on Tag
 on:
   push:
     tags:
+      - '*'
       - 'v*'
   workflow_dispatch:
 
@@ -20,11 +21,11 @@ jobs:
           - os: macos-latest
             platform: darwin/universal
             arch: universal
-            artifact_name: marauder-studio-darwin-universal
+            artifact_name: marauder-studio-macos-universal
           - os: windows-latest
             platform: windows/amd64
             arch: amd64
-            artifact_name: marauder-studio-windows-amd64.exe
+            artifact_name: marauder-studio-windows-amd64
           - os: ubuntu-latest
             platform: linux/amd64
             arch: amd64
@@ -60,12 +61,22 @@ jobs:
           npm ci
 
       - name: Build Desktop Application (Wails)
+        shell: bash
         run: |
-          wails build -platform ${{ matrix.platform }} -clean -o ${{ matrix.artifact_name }}
+          if [ "${{ runner.os }}" = "Linux" ]; then
+            if pkg-config --exists webkit2gtk-4.0; then
+              wails build -platform ${{ matrix.platform }} -clean
+            else
+              wails build -platform ${{ matrix.platform }} -tags webkit2_41 -clean
+            fi
+          else
+            wails build -platform ${{ matrix.platform }} -clean
+          fi
 
       - name: Build CLI Binary
         shell: bash
         run: |
+          mkdir -p build/bin
           if [ "${{ runner.os }}" = "Windows" ]; then
             go build -ldflags="-s -w" -o build/bin/marauder-cli-${{ matrix.arch }}.exe ./cmd/marauder-studio/main.go
           else
@@ -107,7 +118,7 @@ jobs:
       - name: Flatten Artifacts and Compute SHA256 Checksums
         run: |
           mkdir -p dist-release
-          find release-artifacts -type f -exec mv {} dist-release/ \;
+          find release-artifacts -type f -exec cp {} dist-release/ \;
           cd dist-release
           sha256sum * > SHA256SUMS.txt
           cat SHA256SUMS.txt
